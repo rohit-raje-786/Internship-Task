@@ -51,7 +51,9 @@ function Home() {
                     {e.status}
                   </div>
                 </td>
-                <td>{e.amount}</td>
+                <td>
+                  ₹{e.amount} out of ₹{e?.targetPrice ? e.targetPrice : 0}
+                </td>
                 <td>{e?.deadline ? e.deadline : "No deadline"}</td>
               </tr>
               <div
@@ -77,7 +79,7 @@ function Home() {
                         <i
                           className="fa fa-trash"
                           aria-hidden="true"
-                          style={{ color: "#999999" }}
+                          style={{ color: "#585858" }}
                         ></i>
                       </span>
 

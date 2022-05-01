@@ -48,17 +48,12 @@
 
 .ul > li > a {
   text-decoration: none;
-  color: #999999;
+  color: #585858;
 }
 .ul > li {
   margin: 10px;
 }
-.menu-container {
-  position: "absolute";
-  margin-left: "470px";
-  margin-top: "-10px";
-  z-index: 1;
-}
+
 .event-container {
   width: 500px;
 }
