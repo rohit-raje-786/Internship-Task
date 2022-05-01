@@ -1,7 +1,8 @@
 # ScreenShots
-<img width="998" alt="Screenshot 2022-05-01 at 1 09 38 PM" src="https://user-images.githubusercontent.com/61861303/166136772-ea64819e-a9bb-4f26-8e8a-2244a239181b.png">
 
-<img width="786" alt="Screenshot 2022-05-01 at 1 11 25 PM" src="https://user-images.githubusercontent.com/61861303/166136819-add6d03a-ab5e-4465-ae19-9cfa37656c1b.png">
+<img width="711" alt="Screenshot 2022-05-01 at 3 08 04 PM" src="https://user-images.githubusercontent.com/61861303/166140332-9cebd961-47d0-4e81-8e59-4387c6af0572.png">
+
+<img width="679" alt="Screenshot 2022-05-01 at 3 08 27 PM" src="https://user-images.githubusercontent.com/61861303/166140350-b784de20-510c-48cf-bb98-412c3e0f35f1.png">
 
 
 # Getting Started with Create React App
