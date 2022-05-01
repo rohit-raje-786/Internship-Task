@@ -1,38 +1,73 @@
 .App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  /* margin: 25px; */
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin: 0px auto;
+}
+.styled-table thead tr {
+  background-color: #efefef;
+  color: #000;
+  text-align: left;
+  height: 50px;
+  font-weight: 100;
+  font-size: 11px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.styled-table th,
+.styled-table td {
+  text-align: center;
+  font-weight: 100;
+  font-size: 11px;
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #551a8a;
+}
+.ul {
+  padding: 5px;
+  list-style: none;
+  background: #ffff;
+  box-shadow: 5px 5px #efefef;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ul > li > a {
+  text-decoration: none;
+  color: #999999;
+}
+.ul > li {
+  margin: 10px;
+}
+.menu-container {
+  position: "absolute";
+  margin-left: "470px";
+  margin-top: "-10px";
+  z-index: 1;
+}
+.event-container {
+  width: 500px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btns-container {
+  display: "flex";
+  justify-content: "space-between";
+  flex-direction: "column";
+  position: "absolute";
+  top: "31%";
+  left: "71%";
 }
