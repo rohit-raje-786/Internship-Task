@@ -23,7 +23,23 @@ function Home() {
       }
     };
     fetchData();
-  }, []);
+  }, [setEvents]);
+
+  const deletEvt = async (id) => {
+    console.log(id);
+    try {
+      await axios
+        .delete(`http://hiring-tests.herokuapp.com/deleteEvent/${id}`, {
+          headers: {
+            Authorization: "Bearer " + process.env.REACT_APP_AUTH_TOKEN,
+          },
+        })
+        .then((res) => alert(`Event with id ${id} has Succesfully deleted`))
+        .catch((err) => alert(err.message));
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <div>
       <table className="styled-table">
@@ -83,10 +99,12 @@ function Home() {
                         ></i>
                       </span>
 
-                      <a href="">Delete Campaign</a>
+                      <a href="#" onClick={() => deletEvt(e._id)}>
+                        Delete Campaign
+                      </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href={`/editevt/${e._id}`}>
                         <span style={{ marginRight: 5 }}>
                           <i
                             className="fa fa-pencil-square"
@@ -110,7 +128,7 @@ function Home() {
           justifyContent: "space-between",
           flexDirection: "column",
           position: "absolute",
-          top: "31%",
+          top: "29%",
           left: "71%",
         }}
       >

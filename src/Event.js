@@ -24,7 +24,7 @@ function Event() {
   }, []);
   return (
     <div className="event-container">
-      <ul className="ul">
+      <ul>
         <li>User Id:{event?._id}</li>
         <li>Status:{event?.status}</li>
         <li>Title:{event?.title}</li>
